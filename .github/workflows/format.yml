@@ -25,5 +25,3 @@ jobs:
           node-version: 14.x
       - name: Install dependencies
         run: yarn install
-      - name: Run check
-        run: yarn format:check

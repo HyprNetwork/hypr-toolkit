@@ -26,7 +26,7 @@ it("renders correctly", () => {
       width: 10px;
       height: 10px;
       pointer-events: none;
-      border: 1px solid #FFFFFF;
+      border: 2px solid #FFFFFF;
       border-radius: 50%;
       background-color: #ED4B9E;
     }
@@ -37,6 +37,7 @@ it("renders correctly", () => {
         <div />
         <span
           class="c1"
+          color="failure"
         />
       </span>
     </DocumentFragment>

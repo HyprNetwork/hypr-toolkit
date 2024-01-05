@@ -13,7 +13,7 @@ interface ModalsContext {
   setCloseOnOverlayClick: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const ModalWrapper = styled.div`
+const ModalWrapper = styled.div.attrs({ role: "modalWrapper" })`
   display: flex;
   flex-direction: column;
   justify-content: center;

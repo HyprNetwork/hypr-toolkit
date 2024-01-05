@@ -184,9 +184,9 @@ const useTooltip = (content: React.ReactNode, options: TooltipOptions): TooltipR
   });
 
   const tooltip = (
-    <StyledTooltip ref={setTooltipElement} style={{ ...styles.popper, ...options.tootipStyle }} {...attributes.popper}>
+    <StyledTooltip ref={setTooltipElement} style={styles.popper} {...attributes.popper}>
       <ThemeProvider theme={invertTheme}>{content}</ThemeProvider>
-      {!options.hideArrow && <Arrow ref={setArrowElement} style={styles.arrow} />}
+      <Arrow ref={setArrowElement} style={styles.arrow} />
     </StyledTooltip>
   );
 
@@ -196,7 +196,6 @@ const useTooltip = (content: React.ReactNode, options: TooltipOptions): TooltipR
     targetRef: setTargetElement,
     tooltip: tooltipInPortal ?? tooltip,
     tooltipVisible: visible,
-    setTooltipVisible: setVisible,
   };
 };
 

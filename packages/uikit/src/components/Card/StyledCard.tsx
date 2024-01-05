@@ -54,8 +54,8 @@ export const StyledCard = styled.div<StyledCardProps>`
       animation: ${PromotedGradient} 3s ease infinite;
       background-size: 400% 400%;
     `}
-
-  padding: 1px 1px 3px 1px;
+  box-shadow: 0px 16px 32px rgba(236, 205, 227, 0.24);
+  /* padding: 1px 1px 1px 1px; */
 
   ${space}
 `;

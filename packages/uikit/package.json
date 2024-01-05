@@ -13,7 +13,6 @@
     "start": "yarn storybook",
     "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
     "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",

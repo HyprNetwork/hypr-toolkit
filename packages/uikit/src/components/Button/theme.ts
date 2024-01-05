@@ -6,8 +6,8 @@ export const scaleVariants = {
     padding: "0 24px",
   },
   [scales.SM]: {
-    height: "40px",
-    padding: "0 12px",
+    height: "32px",
+    padding: "0 16px",
   },
   [scales.XS]: {
     height: "20px",
@@ -19,10 +19,13 @@ export const scaleVariants = {
 export const styleVariants = {
   [variants.PRIMARY]: {
     backgroundColor: "primary",
-    color: "btnTextColor",
+    color: "white",
   },
   [variants.SECONDARY]: {
-    backgroundColor: "secondary",
+    backgroundColor: "transparent",
+    border: "2px solid",
+    borderColor: "primary",
+    boxShadow: "none",
     color: "primary",
     ":disabled": {
       backgroundColor: "transparent",
@@ -39,17 +42,20 @@ export const styleVariants = {
   },
   [variants.DANGER]: {
     backgroundColor: "failure",
-    color: "btnTextColor",
+    color: "white",
   },
   [variants.SUCCESS]: {
     backgroundColor: "success",
-    color: "btnTextColor",
+    color: "white",
   },
   [variants.TEXT]: {
     backgroundColor: "transparent",
-    // border: "1px solid",
-    // borderColor: "primary",
-    // boxShadow: "none",
     color: "primary",
+    boxShadow: "none",
+  },
+  [variants.LIGHT]: {
+    backgroundColor: "input",
+    color: "textSubtle",
+    boxShadow: "none",
   },
 };

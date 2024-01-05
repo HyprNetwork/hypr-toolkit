@@ -5,13 +5,10 @@ import { Box } from "../../components/Box";
 import { ArrowBackIcon, CloseIcon } from "../../components/Svg";
 import { IconButton } from "../../components/Button";
 import { ModalProps } from "./types";
-import { Link } from "../../components/Link";
-import { Text } from "../../components/Text";
 
 export const ModalHeader = styled.div<{ background?: string }>`
   align-items: center;
-  background: ${({ background }) => background || "transparent"};
-  /* border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder}; */
+  border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
   display: flex;
   padding: 12px 24px;
 `;
@@ -30,7 +27,7 @@ export const ModalBody = styled(Flex)`
 export const ModalCloseButton: React.FC<{ onDismiss: ModalProps["onDismiss"] }> = ({ onDismiss }) => {
   return (
     <IconButton variant="text" onClick={onDismiss} aria-label="Close the dialog">
-      <CloseIcon color="#9DA6A6" height="12px" width="12px" />
+      <CloseIcon color="primary" />
     </IconButton>
   );
 };
@@ -43,17 +40,15 @@ export const ModalBackButton: React.FC<{ onBack: ModalProps["onBack"] }> = ({ on
   );
 };
 
-export const ModalContainer = styled(Box)<{ minWidth: string }>`
+export const ModalContainer = styled(Box).attrs({ tag: "modalContainer" })<{ minWidth: string }>`
   overflow: hidden;
+  background: ${({ theme }) => theme.modal.background};
   box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);
+  border: 1px solid ${({ theme }) => theme.colors.cardBorder};
   border-radius: 32px;
   width: 100%;
   max-height: 100vh;
   z-index: ${({ theme }) => theme.zIndices.modal};
-  background: ${({ theme }) => theme.colors.tooltipColors.background};
-  border: 1px solid ${({ theme }) => theme.colors.tooltipColors.borderColor};
-  box-shadow: 0px 8px 13px 3px rgba(9, 2, 18, 0.3);
-  border-radius: 12px;
 
   ${({ theme }) => theme.mediaQueries.xs} {
     width: auto;

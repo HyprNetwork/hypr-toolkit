@@ -11,7 +11,7 @@ interface TransientButtonProps extends ThemedButtonProps {
   $isLoading?: boolean;
 }
 
-const getDisabledStyles = ({ $isLoading, theme, variant: v }: TransientButtonProps) => {
+const getDisabledStyles = ({ $isLoading, theme }: TransientButtonProps) => {
   if ($isLoading === true) {
     return `
       &:disabled,
@@ -24,10 +24,10 @@ const getDisabledStyles = ({ $isLoading, theme, variant: v }: TransientButtonPro
   return `
     &:disabled,
     &.hypr-button--disabled {
-      background-color: ${v === "primary" ? "#1F373B" : "#272E32"};
-      border-color: ${v === "primary" ? "#1F373B" : "#272E32"};
-      color: ${v === "primary" ? "#122124" : "#484E4E"};
+      background-color: ${theme.colors.backgroundDisabled};
+      border-color: ${theme.colors.backgroundDisabled};
       box-shadow: none;
+      color: ${theme.colors.textDisabled};
       cursor: not-allowed;
     }
   `;
@@ -47,11 +47,12 @@ const StyledButton = styled.button<BaseButtonProps>`
   align-items: center;
   border: 0;
   border-radius: 12px;
+  box-shadow: 0px 5px 20px rgba(220, 0, 88, 0.2);
   cursor: pointer;
   display: inline-flex;
   font-family: inherit;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 600;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;

@@ -29,8 +29,8 @@ const Checkbox = styled.input.attrs({ type: "checkbox" })<CheckboxProps>`
   &:after {
     content: "";
     position: absolute;
-    border-bottom: 1px solid;
-    border-left: 1px solid;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
     border-color: transparent;
     top: 30%;
     left: 0;

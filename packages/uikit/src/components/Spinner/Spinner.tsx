@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import PanIcon from "./PanIcon";
 import PancakeIcon from "./PancakeIcon";
 import { SpinnerProps } from "./types";
+import Animate from "./Animate";
 
 const rotate = keyframes`
   from {
@@ -42,11 +43,12 @@ const FloatingPanIcon = styled(PanIcon)`
   transform: translate3d(0, 0, 0);
 `;
 
-const Spinner: React.FC<SpinnerProps> = ({ size = 128 }) => {
+const Spinner: React.FC<SpinnerProps> = ({ size = 75, color = "#448aff"}) => {
   return (
     <Container>
-      <RotatingPancakeIcon width={`${size * 0.5}px`} />
-      <FloatingPanIcon width={`${size}px`} />
+      {/* <RotatingPancakeIcon width={`${size * 0.5}px`} /> */}
+      {/* <FloatingPanIcon width={`${size}px`} /> */}
+      <Animate size={size} color={color} />
     </Container>
   );
 };

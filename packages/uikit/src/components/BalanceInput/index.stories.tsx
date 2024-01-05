@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Box from "../Box/Box";
 import BalanceInput from "./BalanceInput";
+import TextFieldComp from "./TextField";
 
 export default {
   title: "Components/BalanceInput",
@@ -73,15 +74,27 @@ export const UnitDisplay: React.FC = () => {
   };
 
   return (
-    <Box width="300px">
-      <BalanceInput
-        onUserInput={handleCakeChange}
-        value={cakeValue}
-        currencyValue={cakeToUSD(cakeValue)}
-        placeholder="0.0"
-        unit="CAKE"
-      />
-    </Box>
+    <>
+      <Box width="300px" mb="24px">
+        <BalanceInput
+          onUserInput={handleCakeChange}
+          value={cakeValue}
+          currencyValue={cakeToUSD(cakeValue)}
+          placeholder="0.0"
+          unit="CAKE"
+        />
+      </Box>
+      {/* Long token names with spaces */}
+      <Box width="300px">
+        <BalanceInput
+          onUserInput={handleCakeChange}
+          value={cakeValue}
+          currencyValue="2854.66 BADGER-HOTCROSS LP"
+          placeholder="0.0"
+          unit="CAKE-BNB LP"
+        />
+      </Box>
+    </>
   );
 };
 
@@ -139,6 +152,16 @@ export const SiwtchUnits: React.FC = () => {
         isWarning={!values[editingUnit] || parseFloat(values[editingUnit]) <= 0}
         switchEditingUnits={switchEditingUnits}
       />
+    </Box>
+  );
+};
+
+export const Textfield: React.FC = () => {
+  const [value, setValue] = useState("");
+
+  return (
+    <Box width="300px">
+      <TextFieldComp label="Label" value={value} placeholder="Placeholder" onUserInput={setValue} />
     </Box>
   );
 };

@@ -6,6 +6,8 @@ export type MediaQueries = {
   md: string;
   lg: string;
   xl: string;
+  xxl: string;
+  xxxl: string;
   nav: string;
 };
 
@@ -25,6 +27,7 @@ export type Shadows = {
   warning: string;
   focus: string;
   inset: string;
+  tooltip: string;
 };
 
 export type Gradients = {
@@ -38,13 +41,6 @@ export type Gradients = {
 };
 
 export type Colors = {
-  // Additional colors
-  binance: string;
-  overlay: string;
-  gold: string;
-  silver: string;
-  bronze: string;
-  btnBgSecondaryColor: string;
   primary: string;
   primaryBright: string;
   primaryDark: string;
@@ -54,7 +50,6 @@ export type Colors = {
   failure: string;
   warning: string;
   cardBorder: string;
-  cardBackground: string;
   contrast: string;
   dropdown: string;
   dropdownDeep: string;
@@ -64,6 +59,7 @@ export type Colors = {
   background: string;
   backgroundDisabled: string;
   backgroundAlt: string;
+  backgroundAlt2: string;
   text: string;
   textDisabled: string;
   textSubtle: string;
@@ -72,18 +68,21 @@ export type Colors = {
   // Gradients
   gradients: Gradients;
 
-  tooltipColors: {
-    background: string;
-    borderColor: string;
-  };
-  // add
-  borderColor: string;
-  textSubSubtle: string;
-  btnTextColor: string;
+  // Additional colors
+  binance: string;
+  overlay: string;
+  gold: string;
+  silver: string;
+  bronze: string;
 };
 
 export type ZIndices = {
   dropdown: number;
   modal: number;
-  header: number;
 };
+
+export type DevicesQueries = {
+  mobile: string;
+  tablet: string;
+  desktop: string;
+}

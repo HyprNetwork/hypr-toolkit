@@ -1,36 +1,62 @@
 import { Colors } from "./types";
 
 export const baseColors = {
-  primary: "#1BD3D5",
-  primaryBright: "#53DEE9",
-  primaryDark: "#0098A1",
-  secondary: "#212929",
-  failure: "#FF2d55",
-  success: "#31D0AA",
-  warning: "#D87E2C",
-};
-
-export const tooltipColors = {
-  background: "#111717",
-  borderColor: "#384748",
+  failure: "#ED4B9E",
+  primary: "#DC0058",
+  primaryBright: "#DC0058",
+  primaryDark: "#d09300",
+  secondary: "#DC0058",
+  success: "#DC0058",
+  warning: "#FFB237",
 };
 
 export const additionalColors = {
   binance: "#F0B90B",
-  overlay: "#12171A",
+  overlay: "#452a7a",
   gold: "#FFC700",
   silver: "#B2B2B2",
   bronze: "#E7974D",
 };
+
+export const lightColors: Colors = {
+  ...baseColors,
+  ...additionalColors,
+  background: "#fefbff",
+  backgroundDisabled: "#fefbff",
+  backgroundAlt: "#fefbff",
+  backgroundAlt2: "#fefbff",
+  cardBorder: "#EDEDED",
+  contrast: "#191326",
+  dropdown: "#F6F6F6",
+  dropdownDeep: "#EEEEEE",
+  invertedContrast: "#FFFFFF",
+  input: "#eeeaf4",
+  inputSecondary: "#d7caec",
+  tertiary: "#EFF4F5",
+  text: "#28292D",
+  textDisabled: "#00000066",
+  textSubtle: "rgba(0,0,0,0.6)",
+  disabled: "#E9EAEB",
+  gradients: {
+    bubblegum: "linear-gradient(139.73deg, #E5FDFF 0%, #F3EFFF 100%)",
+    inverseBubblegum: "linear-gradient(139.73deg, #F3EFFF 0%, #E5FDFF 100%)",
+    cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
+    blue: "linear-gradient(180deg, #A7E8F1 0%, #94E1F2 100%)",
+    violet: "linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)",
+    violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
+    gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
+  },
+};
+
 export const darkColors: Colors = {
   ...baseColors,
   ...additionalColors,
-  tooltipColors,
-  background: "#020F0F",
-  backgroundDisabled: "#233e42",
-  backgroundAlt: "#020F0F",
-  cardBorder: "#171E1E",
-  cardBackground: "#111717",
+  secondary: "#9A6AFF",
+  background: "#08060B",
+  backgroundDisabled: "#3c3742",
+  backgroundAlt: "#FFFFFF",
+  backgroundAlt2: "rgba(39, 38, 44, 0.7)",
+  cardBorder: "#383241",
   contrast: "#FFFFFF",
   dropdown: "#1E1D20",
   dropdownDeep: "#100C18",
@@ -38,14 +64,11 @@ export const darkColors: Colors = {
   input: "#372F47",
   inputSecondary: "#262130",
   primaryDark: "#0098A1",
-  tertiary: "#12171A",
-  text: "#CFDADA",
+  tertiary: "#353547",
+  text: "#F4EEFF",
   textDisabled: "#666171",
-  textSubtle: "#6E8182",
-  textSubSubtle: "#3C4E4E",
+  textSubtle: "rgba(0, 0, 0, 0.4)",
   disabled: "#524B63",
-  btnTextColor: "#111717",
-  btnBgSecondaryColor: "#01100f",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     inverseBubblegum: "linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)",
@@ -55,6 +78,4 @@ export const darkColors: Colors = {
     violetAlt: "linear-gradient(180deg, #434575 0%, #66578D 100%)",
     gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
   },
-  borderColor: "#384748",
 };
-export const lightColors = darkColors;
