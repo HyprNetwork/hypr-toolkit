@@ -21,6 +21,7 @@ export class Currency {
   public static readonly ETHER = {
     [ChainId.HyprMainnet]: new Currency(18, 'ETH', 'ETH Token'),
     [ChainId.HyprTestnet]: new Currency(18, 'ETH', 'ETH Token'),
+    [ChainId.HyprSepoliaTestnet]: new Currency(18, 'ETH', 'ETH Token'),
   }
 
   /**

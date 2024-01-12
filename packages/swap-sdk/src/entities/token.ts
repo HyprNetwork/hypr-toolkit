@@ -73,4 +73,11 @@ export const WETH = {
     'WETH',
     'Wrapped WETH'
   ),
+  [ChainId.HyprSepoliaTestnet]: new Token(
+    ChainId.HyprSepoliaTestnet,
+    '0x56E40208FbE3c561132cfc8A829736017a8E7909',
+    18,
+    'WETH',
+    'Wrapped WETH'
+  ),
 }

@@ -14,6 +14,7 @@ export declare class Currency {
     static readonly ETHER: {
         1206: Currency;
         60005: Currency;
+        882: Currency;
     };
     /**
      * Constructs an instance of the base class `Currency`. The only instance of the base class `Currency` is `Currency.ETHER`.
@@ -26,5 +27,6 @@ export declare class Currency {
 declare const ETHER: {
     1206: Currency;
     60005: Currency;
+    882: Currency;
 };
 export { ETHER };

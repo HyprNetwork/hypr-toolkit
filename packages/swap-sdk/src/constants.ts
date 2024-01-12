@@ -23,15 +23,18 @@ export enum CHAINKEY {
   // THETA = 'THETA',
 }
 export enum ChainId {
+  HyprSepoliaTestnet = 882,
   HyprTestnet = 60005,
   HyprMainnet = 1206,
 }
 export const FACTORY_ADDRESS: Record<ChainId, string> = {
   [ChainId.HyprTestnet]: '0x438e0bfc3209ac3b909a1a92a5948600af29DCd3',
+  [ChainId.HyprSepoliaTestnet]: '0x8fAac7f3A1e9fee41f0BA4981e8D8898Edd21576',
   [ChainId.HyprMainnet]: '',
 }
 export const INIT_CODE_HASH: Record<ChainId, string> = {
   [ChainId.HyprTestnet]: '0x8c206ab4023786ea32e3162b1c45d0fffd3ae974a8760ebd63ba9820be5f5e9e',
+  [ChainId.HyprSepoliaTestnet]: '0x8c206ab4023786ea32e3162b1c45d0fffd3ae974a8760ebd63ba9820be5f5e9e',
   [ChainId.HyprMainnet]: '',
 }
 

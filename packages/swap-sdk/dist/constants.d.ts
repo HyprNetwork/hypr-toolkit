@@ -13,6 +13,7 @@ export declare enum CHAINKEY {
     HYPR = "HYPR"
 }
 export declare enum ChainId {
+    HyprSepoliaTestnet = 882,
     HyprTestnet = 60005,
     HyprMainnet = 1206
 }
