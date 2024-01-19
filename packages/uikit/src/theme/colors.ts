@@ -12,7 +12,7 @@ export const baseColors = {
 
 export const additionalColors = {
   binance: "#F0B90B",
-  overlay: "#452a7a",
+  overlay: "#ffffff",
   gold: "#FFC700",
   silver: "#B2B2B2",
   bronze: "#E7974D",
@@ -63,7 +63,7 @@ export const darkColors: Colors = {
   invertedContrast: "#191326",
   input: "#372F47",
   inputSecondary: "#262130",
-  primaryDark: "#0098A1",
+  primaryDark: "#760b1a",
   tertiary: "#353547",
   text: "#F4EEFF",
   textDisabled: "#666171",

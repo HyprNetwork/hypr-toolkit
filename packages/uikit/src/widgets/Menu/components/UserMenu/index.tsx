@@ -77,7 +77,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
   const [tooltipRef, setTooltipRef] = useState<HTMLDivElement | null>(null);
   const hideTimeout = useRef<number>();
   const isHoveringOverTooltip = useRef(false);
-  const accountEllipsis = account ? `${account.substring(0, 2)}...${account.substring(account.length - 4)}` : null;
+  const accountEllipsis = account ? `${account.substring(0, 4)}...${account.substring(account.length - 3)}` : null;
   const { styles, attributes } = usePopper(targetRef, tooltipRef, {
     placement: "bottom-end",
     modifiers: [{ name: "offset", options: { offset: [0, 12] } }],

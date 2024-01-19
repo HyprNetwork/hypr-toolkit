@@ -43,7 +43,7 @@ const FloatingPanIcon = styled(PanIcon)`
   transform: translate3d(0, 0, 0);
 `;
 
-const Spinner: React.FC<SpinnerProps> = ({ size = 75, color = "#448aff"}) => {
+const Spinner: React.FC<SpinnerProps> = ({ size = 75, color = "#fff"}) => {
   return (
     <Container>
       {/* <RotatingPancakeIcon width={`${size * 0.5}px`} /> */}

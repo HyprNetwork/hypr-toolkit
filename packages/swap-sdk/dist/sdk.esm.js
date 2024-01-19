@@ -47,8 +47,8 @@ var ChainId;
   ChainId[ChainId["HyprMainnet"] = 1206] = "HyprMainnet";
 })(ChainId || (ChainId = {}));
 
-var FACTORY_ADDRESS = (_FACTORY_ADDRESS = {}, _FACTORY_ADDRESS[ChainId.HyprTestnet] = '0x438e0bfc3209ac3b909a1a92a5948600af29DCd3', _FACTORY_ADDRESS[ChainId.HyprSepoliaTestnet] = '0x8fAac7f3A1e9fee41f0BA4981e8D8898Edd21576', _FACTORY_ADDRESS[ChainId.HyprMainnet] = '', _FACTORY_ADDRESS);
-var INIT_CODE_HASH = (_INIT_CODE_HASH = {}, _INIT_CODE_HASH[ChainId.HyprTestnet] = '0x8c206ab4023786ea32e3162b1c45d0fffd3ae974a8760ebd63ba9820be5f5e9e', _INIT_CODE_HASH[ChainId.HyprSepoliaTestnet] = '0x8c206ab4023786ea32e3162b1c45d0fffd3ae974a8760ebd63ba9820be5f5e9e', _INIT_CODE_HASH[ChainId.HyprMainnet] = '', _INIT_CODE_HASH);
+var FACTORY_ADDRESS = (_FACTORY_ADDRESS = {}, _FACTORY_ADDRESS[ChainId.HyprTestnet] = '0x438e0bfc3209ac3b909a1a92a5948600af29DCd3', _FACTORY_ADDRESS[ChainId.HyprSepoliaTestnet] = '0x025ec65Df03165B1f1b5C9eEFfACaa2788c77f83', _FACTORY_ADDRESS[ChainId.HyprMainnet] = '', _FACTORY_ADDRESS);
+var INIT_CODE_HASH = (_INIT_CODE_HASH = {}, _INIT_CODE_HASH[ChainId.HyprTestnet] = '0x8c206ab4023786ea32e3162b1c45d0fffd3ae974a8760ebd63ba9820be5f5e9e', _INIT_CODE_HASH[ChainId.HyprSepoliaTestnet] = '0x45640eaa07fa0cffe60aafb49109fb6a8135c9611c896af749815c09b79d55b0', _INIT_CODE_HASH[ChainId.HyprMainnet] = '', _INIT_CODE_HASH);
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
 var ZERO = /*#__PURE__*/JSBI.BigInt(0);
