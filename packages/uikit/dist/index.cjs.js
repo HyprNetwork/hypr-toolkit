@@ -5230,8 +5230,8 @@ var MenuIconWrapper = styled__default["default"].div(templateObject_1$6 || (temp
     return theme.colors[borderColor];
 });
 var ProfileIcon = styled__default["default"](Image)(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n  left: 0;\n  position: absolute;\n  top: -4px;\n  z-index: 102;\n\n  & > img {\n    border-radius: 50%;\n  }\n"], ["\n  left: 0;\n  position: absolute;\n  top: -4px;\n  z-index: 102;\n\n  & > img {\n    border-radius: 50%;\n  }\n"])));
-var NoProfileMenuIcon = function () { return (React__default["default"].createElement(MenuIconWrapper, { borderColor: "primary" },
-    React__default["default"].createElement(Icon$m, { color: "primary", width: "24px" }))); };
+var NoProfileMenuIcon = function () { return (React__default["default"].createElement(MenuIconWrapper, { borderColor: "text" },
+    React__default["default"].createElement(Icon$m, { color: "text", width: "24px" }))); };
 var PendingMenuIcon = function () { return (React__default["default"].createElement(MenuIconWrapper, { borderColor: "secondary" },
     React__default["default"].createElement(Icon$X, { color: "secondary", width: "24px", spin: true }))); };
 var WarningMenuIcon = function () { return (React__default["default"].createElement(MenuIconWrapper, { borderColor: "warning" },

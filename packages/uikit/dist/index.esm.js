@@ -5198,8 +5198,8 @@ var MenuIconWrapper = styled.div(templateObject_1$6 || (templateObject_1$6 = __m
     return theme.colors[borderColor];
 });
 var ProfileIcon = styled(Image)(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n  left: 0;\n  position: absolute;\n  top: -4px;\n  z-index: 102;\n\n  & > img {\n    border-radius: 50%;\n  }\n"], ["\n  left: 0;\n  position: absolute;\n  top: -4px;\n  z-index: 102;\n\n  & > img {\n    border-radius: 50%;\n  }\n"])));
-var NoProfileMenuIcon = function () { return (React__default.createElement(MenuIconWrapper, { borderColor: "primary" },
-    React__default.createElement(Icon$m, { color: "primary", width: "24px" }))); };
+var NoProfileMenuIcon = function () { return (React__default.createElement(MenuIconWrapper, { borderColor: "text" },
+    React__default.createElement(Icon$m, { color: "text", width: "24px" }))); };
 var PendingMenuIcon = function () { return (React__default.createElement(MenuIconWrapper, { borderColor: "secondary" },
     React__default.createElement(Icon$X, { color: "secondary", width: "24px", spin: true }))); };
 var WarningMenuIcon = function () { return (React__default.createElement(MenuIconWrapper, { borderColor: "warning" },
