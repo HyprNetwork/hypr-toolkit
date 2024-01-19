@@ -10,7 +10,7 @@ export declare enum Rounding {
     ROUND_UP = 2
 }
 export declare enum CHAINKEY {
-    HYPR = "HETH"
+    HYPR = "ETH"
 }
 export declare enum ChainId {
     HyprSepoliaTestnet = 882,

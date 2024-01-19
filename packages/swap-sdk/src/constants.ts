@@ -14,7 +14,7 @@ export enum Rounding {
   ROUND_UP,
 }
 export enum CHAINKEY {
-  HYPR = 'HETH',
+  HYPR = 'ETH',
   // OPTIMISTIC = 'OPTIMISTIC',
   // ARBITRUM = 'ARBITRUM',
   // POLYGON = 'POLYGON',
