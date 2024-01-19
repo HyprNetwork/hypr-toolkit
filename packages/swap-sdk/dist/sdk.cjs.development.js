@@ -31,7 +31,7 @@ var _FACTORY_ADDRESS, _INIT_CODE_HASH, _SOLIDITY_TYPE_MAXIMA;
 })(exports.Rounding || (exports.Rounding = {}));
 
 (function (CHAINKEY) {
-  CHAINKEY["HYPR"] = "HYPR"; // OPTIMISTIC = 'OPTIMISTIC',
+  CHAINKEY["HYPR"] = "HETH"; // OPTIMISTIC = 'OPTIMISTIC',
   // ARBITRUM = 'ARBITRUM',
   // POLYGON = 'POLYGON',
   // AVALANCH = 'AVALANCH',
