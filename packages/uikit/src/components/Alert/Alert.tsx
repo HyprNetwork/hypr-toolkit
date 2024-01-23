@@ -47,7 +47,7 @@ const getIcon = (variant: AlertProps["variant"] = variants.INFO) => {
 const IconLabel = styled.div<ThemedIconLabel>`
   background-color: ${getThemeColor};
   border-radius: 16px 0 0 16px;
-  color: ${({ theme }) => theme.alert.background};
+  color: ${({ theme, variant }) => (variant ? theme.alert[variant] : theme.alert.background)};
   padding: 12px;
 `;
 
@@ -80,7 +80,7 @@ const Alert: React.FC<AlertProps> = ({ title, children, variant, onClick }) => {
   return (
     <StyledAlert>
       <IconLabel variant={variant} hasDescription={!!children}>
-        <Icon color="currentColor" width="24px" />
+        <Icon color={variant === variants.SUCCESS ? "green" : "currentColor"} width="24px" />
       </IconLabel>
       <Details hasHandler={!!onClick}>
         <Text bold>{title}</Text>

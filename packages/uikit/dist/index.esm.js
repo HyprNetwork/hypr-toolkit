@@ -1781,8 +1781,8 @@ var getIcon = function (variant) {
     }
 };
 var IconLabel = styled.div(templateObject_1$12 || (templateObject_1$12 = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px 0 0 16px;\n  color: ", ";\n  padding: 12px;\n"], ["\n  background-color: ", ";\n  border-radius: 16px 0 0 16px;\n  color: ", ";\n  padding: 12px;\n"])), getThemeColor, function (_a) {
-    var theme = _a.theme;
-    return theme.alert.background;
+    var theme = _a.theme, variant = _a.variant;
+    return (variant ? theme.alert[variant] : theme.alert.background);
 });
 var withHandlerSpacing = 32 + 12 + 8; // button size + inner spacing + handler position
 var Details = styled.div(templateObject_2$x || (templateObject_2$x = __makeTemplateObject(["\n  flex: 1;\n  padding-bottom: 12px;\n  padding-left: 12px;\n  padding-right: ", ";\n  padding-top: 12px;\n"], ["\n  flex: 1;\n  padding-bottom: 12px;\n  padding-left: 12px;\n  padding-right: ", ";\n  padding-top: 12px;\n"])), function (_a) {
@@ -1799,7 +1799,7 @@ var Alert = function (_a) {
     var Icon = getIcon(variant);
     return (React__default.createElement(StyledAlert, null,
         React__default.createElement(IconLabel, { variant: variant, hasDescription: !!children },
-            React__default.createElement(Icon, { color: "currentColor", width: "24px" })),
+            React__default.createElement(Icon, { color: variant === variants$5.SUCCESS ? "green" : "currentColor", width: "24px" })),
         React__default.createElement(Details, { hasHandler: !!onClick },
             React__default.createElement(Text, { bold: true }, title),
             typeof children === "string" ? React__default.createElement(Text, { as: "p" }, children) : children),
@@ -2772,9 +2772,17 @@ var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), 
 
 var light$7 = {
     background: lightColors.backgroundAlt,
+    info: lightColors.warning,
+    success: "green",
+    danger: lightColors.backgroundAlt,
+    warning: lightColors.warning,
 };
 var dark$7 = {
     background: darkColors.backgroundAlt,
+    info: darkColors.warning,
+    success: "green",
+    danger: darkColors.backgroundAlt,
+    warning: darkColors.warning,
 };
 
 var breakpointMap = {
