@@ -29,12 +29,12 @@ export enum ChainId {
 }
 export const FACTORY_ADDRESS: Record<ChainId, string> = {
   [ChainId.HyprTestnet]: '0x438e0bfc3209ac3b909a1a92a5948600af29DCd3',
-  [ChainId.HyprSepoliaTestnet]: '0x025ec65Df03165B1f1b5C9eEFfACaa2788c77f83',
+  [ChainId.HyprSepoliaTestnet]: '0xB916c39a4fF1d8bEcB320a7543B884DA0668FFb8',
   [ChainId.HyprMainnet]: '',
 }
 export const INIT_CODE_HASH: Record<ChainId, string> = {
   [ChainId.HyprTestnet]: '0x8c206ab4023786ea32e3162b1c45d0fffd3ae974a8760ebd63ba9820be5f5e9e',
-  [ChainId.HyprSepoliaTestnet]: '0x45640eaa07fa0cffe60aafb49109fb6a8135c9611c896af749815c09b79d55b0',
+  [ChainId.HyprSepoliaTestnet]: '0x4fb3e16fc0f4ca37e27bf4dd619846e053c566658ab2cafe20e6a18e6d1f8e00',
   [ChainId.HyprMainnet]: '',
 }
 
