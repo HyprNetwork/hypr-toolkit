@@ -1,5 +1,5 @@
-import { Price } from './fractions/price';
 import { TokenAmount } from './fractions/tokenAmount';
+import { Price } from './fractions/price';
 import { BigintIsh, ChainId } from '../constants';
 import { Token } from './token';
 export declare class Pair {

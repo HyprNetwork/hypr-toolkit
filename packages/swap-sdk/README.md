@@ -1,4 +1,4 @@
-# HYPR SDK
+# HDX SDK
 
 ```
 npm publish --access public
