@@ -42,7 +42,7 @@ var _FACTORY_ADDRESS, _INIT_CODE_HASH, _SOLIDITY_TYPE_MAXIMA;
 (function (ChainId) {
   ChainId[ChainId["HyprSepoliaTestnet"] = 882] = "HyprSepoliaTestnet";
   ChainId[ChainId["HyprTestnet"] = 60005] = "HyprTestnet";
-  ChainId[ChainId["HyprMainnet"] = 1206] = "HyprMainnet";
+  ChainId[ChainId["HyprMainnet"] = 881] = "HyprMainnet";
 })(exports.ChainId || (exports.ChainId = {}));
 
 var FACTORY_ADDRESS = (_FACTORY_ADDRESS = {}, _FACTORY_ADDRESS[exports.ChainId.HyprTestnet] = '0x438e0bfc3209ac3b909a1a92a5948600af29DCd3', _FACTORY_ADDRESS[exports.ChainId.HyprSepoliaTestnet] = '0x4D9fAb473044Af8bD8C8b71CA4181311b84d2974', _FACTORY_ADDRESS[exports.ChainId.HyprMainnet] = '0x4D9fAb473044Af8bD8C8b71CA4181311b84d2974', _FACTORY_ADDRESS);

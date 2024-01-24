@@ -25,7 +25,7 @@ export enum CHAINKEY {
 export enum ChainId {
   HyprSepoliaTestnet = 882,
   HyprTestnet = 60005,
-  HyprMainnet = 1206,
+  HyprMainnet = 881,
 }
 export const FACTORY_ADDRESS: Record<ChainId, string> = {
   [ChainId.HyprTestnet]: '0x438e0bfc3209ac3b909a1a92a5948600af29DCd3',

@@ -15,7 +15,7 @@ export declare enum CHAINKEY {
 export declare enum ChainId {
     HyprSepoliaTestnet = 882,
     HyprTestnet = 60005,
-    HyprMainnet = 1206
+    HyprMainnet = 881
 }
 export declare const FACTORY_ADDRESS: Record<ChainId, string>;
 export declare const INIT_CODE_HASH: Record<ChainId, string>;
