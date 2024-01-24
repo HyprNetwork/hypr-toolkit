@@ -454,7 +454,7 @@ function currencyEquals(currencyA, currencyB) {
 
   return currencyA === currencyB;
 }
-var WETH = (_WETH = {}, _WETH[ChainId.HyprMainnet] = /*#__PURE__*/new Token(ChainId.HyprMainnet, '0x7374851CEB4A6E573052cA983Ce9CfdBe41f0024', 18, 'WETH', 'Wrapped ETH'), _WETH[ChainId.HyprTestnet] = /*#__PURE__*/new Token(ChainId.HyprTestnet, '0x7374851CEB4A6E573052cA983Ce9CfdBe41f0024', 18, 'WETH', 'Wrapped WETH'), _WETH[ChainId.HyprSepoliaTestnet] = /*#__PURE__*/new Token(ChainId.HyprSepoliaTestnet, '0x56E40208FbE3c561132cfc8A829736017a8E7909', 18, 'WETH', 'Wrapped WETH'), _WETH);
+var WETH = (_WETH = {}, _WETH[ChainId.HyprMainnet] = /*#__PURE__*/new Token(ChainId.HyprMainnet, '0x7374851CEB4A6E573052cA983Ce9CfdBe41f0024', 18, 'WETH', 'Wrapped ETH'), _WETH[ChainId.HyprTestnet] = /*#__PURE__*/new Token(ChainId.HyprTestnet, '0x7374851CEB4A6E573052cA983Ce9CfdBe41f0024', 18, 'WETH', 'Wrapped WETH'), _WETH[ChainId.HyprSepoliaTestnet] = /*#__PURE__*/new Token(ChainId.HyprSepoliaTestnet, '0x7374851CEB4A6E573052cA983Ce9CfdBe41f0024', 18, 'WETH', 'Wrapped WETH'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
