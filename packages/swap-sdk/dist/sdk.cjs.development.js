@@ -45,8 +45,8 @@ var _FACTORY_ADDRESS, _INIT_CODE_HASH, _SOLIDITY_TYPE_MAXIMA;
   ChainId[ChainId["HyprMainnet"] = 1206] = "HyprMainnet";
 })(exports.ChainId || (exports.ChainId = {}));
 
-var FACTORY_ADDRESS = (_FACTORY_ADDRESS = {}, _FACTORY_ADDRESS[exports.ChainId.HyprTestnet] = '0x438e0bfc3209ac3b909a1a92a5948600af29DCd3', _FACTORY_ADDRESS[exports.ChainId.HyprSepoliaTestnet] = '0xB916c39a4fF1d8bEcB320a7543B884DA0668FFb8', _FACTORY_ADDRESS[exports.ChainId.HyprMainnet] = '', _FACTORY_ADDRESS);
-var INIT_CODE_HASH = (_INIT_CODE_HASH = {}, _INIT_CODE_HASH[exports.ChainId.HyprTestnet] = '0x8c206ab4023786ea32e3162b1c45d0fffd3ae974a8760ebd63ba9820be5f5e9e', _INIT_CODE_HASH[exports.ChainId.HyprSepoliaTestnet] = '0x4fb3e16fc0f4ca37e27bf4dd619846e053c566658ab2cafe20e6a18e6d1f8e00', _INIT_CODE_HASH[exports.ChainId.HyprMainnet] = '', _INIT_CODE_HASH);
+var FACTORY_ADDRESS = (_FACTORY_ADDRESS = {}, _FACTORY_ADDRESS[exports.ChainId.HyprTestnet] = '0x438e0bfc3209ac3b909a1a92a5948600af29DCd3', _FACTORY_ADDRESS[exports.ChainId.HyprSepoliaTestnet] = '0x4D9fAb473044Af8bD8C8b71CA4181311b84d2974', _FACTORY_ADDRESS[exports.ChainId.HyprMainnet] = '0x4D9fAb473044Af8bD8C8b71CA4181311b84d2974', _FACTORY_ADDRESS);
+var INIT_CODE_HASH = (_INIT_CODE_HASH = {}, _INIT_CODE_HASH[exports.ChainId.HyprTestnet] = '0x8c206ab4023786ea32e3162b1c45d0fffd3ae974a8760ebd63ba9820be5f5e9e', _INIT_CODE_HASH[exports.ChainId.HyprSepoliaTestnet] = '0x4fb3e16fc0f4ca37e27bf4dd619846e053c566658ab2cafe20e6a18e6d1f8e00', _INIT_CODE_HASH[exports.ChainId.HyprMainnet] = '0x4fb3e16fc0f4ca37e27bf4dd619846e053c566658ab2cafe20e6a18e6d1f8e00', _INIT_CODE_HASH);
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
 var ZERO = /*#__PURE__*/JSBI.BigInt(0);
@@ -452,7 +452,7 @@ function currencyEquals(currencyA, currencyB) {
 
   return currencyA === currencyB;
 }
-var WETH = (_WETH = {}, _WETH[exports.ChainId.HyprMainnet] = /*#__PURE__*/new Token(exports.ChainId.HyprMainnet, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB'), _WETH[exports.ChainId.HyprTestnet] = /*#__PURE__*/new Token(exports.ChainId.HyprTestnet, '0x7EBd9B304B9883bc6fb0901d502Df2B840128a82', 18, 'WETH', 'Wrapped WETH'), _WETH[exports.ChainId.HyprSepoliaTestnet] = /*#__PURE__*/new Token(exports.ChainId.HyprSepoliaTestnet, '0x56E40208FbE3c561132cfc8A829736017a8E7909', 18, 'WETH', 'Wrapped WETH'), _WETH);
+var WETH = (_WETH = {}, _WETH[exports.ChainId.HyprMainnet] = /*#__PURE__*/new Token(exports.ChainId.HyprMainnet, '0x7374851CEB4A6E573052cA983Ce9CfdBe41f0024', 18, 'WETH', 'Wrapped ETH'), _WETH[exports.ChainId.HyprTestnet] = /*#__PURE__*/new Token(exports.ChainId.HyprTestnet, '0x7374851CEB4A6E573052cA983Ce9CfdBe41f0024', 18, 'WETH', 'Wrapped WETH'), _WETH[exports.ChainId.HyprSepoliaTestnet] = /*#__PURE__*/new Token(exports.ChainId.HyprSepoliaTestnet, '0x7374851CEB4A6E573052cA983Ce9CfdBe41f0024', 18, 'WETH', 'Wrapped WETH'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);

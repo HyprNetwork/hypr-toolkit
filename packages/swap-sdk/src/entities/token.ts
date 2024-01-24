@@ -61,21 +61,21 @@ export function currencyEquals(currencyA: Currency, currencyB: Currency): boolea
 export const WETH = {
   [ChainId.HyprMainnet]: new Token(
     ChainId.HyprMainnet,
-    '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+    '0x7374851CEB4A6E573052cA983Ce9CfdBe41f0024',
     18,
-    'WBNB',
-    'Wrapped BNB'
+    'WETH',
+    'Wrapped ETH'
   ),
   [ChainId.HyprTestnet]: new Token(
     ChainId.HyprTestnet,
-    '0x7EBd9B304B9883bc6fb0901d502Df2B840128a82',
+    '0x7374851CEB4A6E573052cA983Ce9CfdBe41f0024',
     18,
     'WETH',
     'Wrapped WETH'
   ),
   [ChainId.HyprSepoliaTestnet]: new Token(
     ChainId.HyprSepoliaTestnet,
-    '0x56E40208FbE3c561132cfc8A829736017a8E7909',
+    '0x7374851CEB4A6E573052cA983Ce9CfdBe41f0024',
     18,
     'WETH',
     'Wrapped WETH'

@@ -29,13 +29,13 @@ export enum ChainId {
 }
 export const FACTORY_ADDRESS: Record<ChainId, string> = {
   [ChainId.HyprTestnet]: '0x438e0bfc3209ac3b909a1a92a5948600af29DCd3',
-  [ChainId.HyprSepoliaTestnet]: '0xB916c39a4fF1d8bEcB320a7543B884DA0668FFb8',
-  [ChainId.HyprMainnet]: '',
+  [ChainId.HyprSepoliaTestnet]: '0x4D9fAb473044Af8bD8C8b71CA4181311b84d2974',
+  [ChainId.HyprMainnet]: '0x4D9fAb473044Af8bD8C8b71CA4181311b84d2974',
 }
 export const INIT_CODE_HASH: Record<ChainId, string> = {
   [ChainId.HyprTestnet]: '0x8c206ab4023786ea32e3162b1c45d0fffd3ae974a8760ebd63ba9820be5f5e9e',
   [ChainId.HyprSepoliaTestnet]: '0x4fb3e16fc0f4ca37e27bf4dd619846e053c566658ab2cafe20e6a18e6d1f8e00',
-  [ChainId.HyprMainnet]: '',
+  [ChainId.HyprMainnet]: '0x4fb3e16fc0f4ca37e27bf4dd619846e053c566658ab2cafe20e6a18e6d1f8e00',
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
