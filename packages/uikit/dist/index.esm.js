@@ -2887,10 +2887,10 @@ var dark$4 = {
 };
 
 var light$3 = {
-    handleBackground: lightColors.backgroundAlt,
+    handleBackground: lightColors.primary,
 };
 var dark$3 = {
-    handleBackground: darkColors.backgroundAlt,
+    handleBackground: darkColors.primary,
 };
 
 var light$2 = {
